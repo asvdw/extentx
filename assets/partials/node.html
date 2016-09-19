@@ -6,7 +6,7 @@
             </span>
         </div>
 
-        <div class='child-name'>
+        <div class='child-name'> NODE: 
             {{ child.name }}
         </div>
         
@@ -54,8 +54,8 @@
                     </tr>
                 </tbody>
             </table>
-
-            <div class='media-collection' ng-if="child.media.length">
+here media
+            <div class='media-collection' ng-if="child.media.length">has media
                 <span ng-repeat='media in child.media'>
                     <img width='25%' class='report-img' src='{{ media.path }}' />
                 </span>

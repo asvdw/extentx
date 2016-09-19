@@ -1,7 +1,7 @@
 <div class='test panel panel-default {{ test.status }}'>
     <div class='content panel-body'>
         <div class='test-name'>
-            {{ test.name }}
+            TEST: {{ test.name }}
         </div>
         <div class='test-status'>
             <span class='{{ test.status }}'>                
@@ -82,11 +82,22 @@
                                 </tr>
                             </tbody>
                         </table>
+                        here ?
+                         <div class='media-collection' ng-if="node.media.length">has media
+                <span ng-repeat='media in node.media'>
+                    <img width='25%' class='report-img' src='{{ media.path }}' />
+                </span>
+                <div>&nbsp;</div>
+            </div>
                     </div>
+ 
 
+blbl
                     <div class='grand-child-collection' ng-controller='NodeController' ng-init='getChildren(node.id)'>
                         <div ng-repeat='child in children' ng-if='children'>
+                            start node
                             <ng-include src="'partials/node.html'"></ng-include>
+                            end node
                         </div>
                     </div>
                 </uib-accordion-group>
