@@ -85,7 +85,8 @@
                         
                         <div class='media-collection' ng-if="nodeMedia.media.length">
                             <span ng-repeat='media in nodeMedia.media'>
-                                <img width='25%' class='report-img' src='{{ media.path }}' />
+                                
+                                <img width='25%' class='report-img' src='{{ media.path }}' data-featherlight='{{ media.path }}'/>
                             </span>
                             <div>&nbsp;</div>
                         </div>
@@ -104,7 +105,7 @@
 
             <div class='media-collection' ng-if="test.media.length">
                 <span ng-repeat='media in test.media'>
-                    <img width='25%' class='report-img' src='{{ media.path }}' />
+                    <img width='25%' class='report-img' src='{{ media.path }}' data-featherlight='{{ media.path }}'/>
                 </span>
                 <div>&nbsp;</div>
             </div>
